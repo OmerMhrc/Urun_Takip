@@ -52,6 +52,7 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.lblortalamasatisfiyat = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.btnGeri = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -67,7 +68,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.lblToplamKategori);
             this.panel1.Controls.Add(this.lblToplamKategorisayisi);
-            this.panel1.Location = new System.Drawing.Point(13, 27);
+            this.panel1.Location = new System.Drawing.Point(13, 63);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(197, 120);
@@ -99,7 +100,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.panel2.Controls.Add(this.lblToplamUrun);
             this.panel2.Controls.Add(this.lblToplamUrunSayisi);
-            this.panel2.Location = new System.Drawing.Point(218, 27);
+            this.panel2.Location = new System.Drawing.Point(218, 63);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(197, 120);
@@ -131,7 +132,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel3.Controls.Add(this.lblmaxstokluurun);
             this.panel3.Controls.Add(this.lblMaxStok);
-            this.panel3.Location = new System.Drawing.Point(423, 155);
+            this.panel3.Location = new System.Drawing.Point(423, 191);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(197, 120);
@@ -164,7 +165,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.panel4.Controls.Add(this.lblminstokluurun);
             this.panel4.Controls.Add(this.lblMinStok);
-            this.panel4.Location = new System.Drawing.Point(628, 155);
+            this.panel4.Location = new System.Drawing.Point(628, 191);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(197, 120);
@@ -196,7 +197,7 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panel5.Controls.Add(this.lbltoplamstoksayisi);
             this.panel5.Controls.Add(this.lblToplamStok);
-            this.panel5.Location = new System.Drawing.Point(423, 27);
+            this.panel5.Location = new System.Drawing.Point(423, 63);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(197, 120);
@@ -228,7 +229,7 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel6.Controls.Add(this.lblenpahaliurun);
             this.panel6.Controls.Add(this.lblEPU);
-            this.panel6.Location = new System.Drawing.Point(13, 155);
+            this.panel6.Location = new System.Drawing.Point(13, 191);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(197, 120);
@@ -260,7 +261,7 @@
             this.panel7.BackColor = System.Drawing.Color.Silver;
             this.panel7.Controls.Add(this.lblenucuzurun);
             this.panel7.Controls.Add(this.lblEUU);
-            this.panel7.Location = new System.Drawing.Point(218, 155);
+            this.panel7.Location = new System.Drawing.Point(218, 191);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(197, 120);
@@ -292,7 +293,7 @@
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel8.Controls.Add(this.lblortalamasatisfiyat);
             this.panel8.Controls.Add(this.label16);
-            this.panel8.Location = new System.Drawing.Point(631, 27);
+            this.panel8.Location = new System.Drawing.Point(631, 63);
             this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(197, 120);
@@ -319,11 +320,24 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Ortalama satış fiyatı";
             // 
+            // btnGeri
+            // 
+            this.btnGeri.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnGeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGeri.Location = new System.Drawing.Point(12, 12);
+            this.btnGeri.Name = "btnGeri";
+            this.btnGeri.Size = new System.Drawing.Size(104, 34);
+            this.btnGeri.TabIndex = 8;
+            this.btnGeri.Text = "Geri";
+            this.btnGeri.UseVisualStyleBackColor = false;
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
+            // 
             // frmIstatistik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(837, 289);
+            this.ClientSize = new System.Drawing.Size(837, 323);
+            this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
@@ -384,5 +398,6 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label lblortalamasatisfiyat;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnGeri;
     }
 }

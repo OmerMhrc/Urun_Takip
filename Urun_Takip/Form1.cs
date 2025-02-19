@@ -67,6 +67,12 @@ namespace Urun_Takip
             adapter.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+            Anaekran.ActiveForm?.Show();
+            this.Close();
+        }
     }
 }
 // Data Source=DESKTOP-PJ65QE6\SQLEXPRESS;Initial Catalog=DbUrun;Integrated Security=True;Trust Server Certificate=True

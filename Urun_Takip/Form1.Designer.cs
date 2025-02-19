@@ -39,6 +39,7 @@
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnAra = new System.Windows.Forms.Button();
             this.btnListele = new System.Windows.Forms.Button();
+            this.btnGeri = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -60,9 +61,9 @@
             this.groupBox1.Controls.Add(this.lblId);
             this.groupBox1.Controls.Add(this.txtbKategori);
             this.groupBox1.Controls.Add(this.lblKategori);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Location = new System.Drawing.Point(12, 53);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(466, 90);
+            this.groupBox1.Size = new System.Drawing.Size(466, 54);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -110,7 +111,7 @@
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(485, 29);
+            this.btnSil.Location = new System.Drawing.Point(484, 69);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(101, 30);
             this.btnSil.TabIndex = 3;
@@ -148,11 +149,23 @@
             this.btnListele.UseVisualStyleBackColor = true;
             this.btnListele.Click += new System.EventHandler(this.btnListele_Click);
             // 
+            // btnGeri
+            // 
+            this.btnGeri.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnGeri.Location = new System.Drawing.Point(12, 12);
+            this.btnGeri.Name = "btnGeri";
+            this.btnGeri.Size = new System.Drawing.Size(104, 34);
+            this.btnGeri.TabIndex = 7;
+            this.btnGeri.Text = "Geri";
+            this.btnGeri.UseVisualStyleBackColor = false;
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
+            // 
             // frmKategori
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(745, 395);
+            this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.btnListele);
             this.Controls.Add(this.btnAra);
             this.Controls.Add(this.btnGuncelle);
@@ -186,6 +199,7 @@
         private System.Windows.Forms.Button btnListele;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.Button btnGeri;
     }
 }
 

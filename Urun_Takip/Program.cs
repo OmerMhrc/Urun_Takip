@@ -17,6 +17,7 @@ namespace Urun_Takip
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Anaekran());
+            //Application.Run(new frmSatislar());
         }
     }
 }

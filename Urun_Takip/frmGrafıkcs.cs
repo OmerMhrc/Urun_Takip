@@ -26,5 +26,11 @@ namespace Urun_Takip{
             }
             baglanti.Close();
         }
+
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+            Anaekran.ActiveForm?.Show();
+            this.Close();
+        }
     }
 }

@@ -14,17 +14,28 @@ namespace Urun_Takip
     public partial class Anaekran : Form
     {
         SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-PJ65QE6\\SQLEXPRESS;Initial Catalog=DbUrun;Integrated Security=True");
+        bool admin_girisi;
         public Anaekran(){
             InitializeComponent();
-            btnKategori.Hide();
-            btnIstatistik.Hide();
-            btnUrun.Hide();
-            btnKategoriGrafik.Hide();
+            if (admin_girisi == false) {
+                btnKategori.Hide();
+                btnIstatistik.Hide();
+                btnUrun.Hide();
+                btnKategoriGrafik.Hide();
+                btnMusteri.Hide();
+                btnSatislar.Hide();
+            }
         }
 
         private void btnUrun_Click(object sender, EventArgs e){
             frmUrun frmurun = new frmUrun();
             frmurun.ShowDialog();
+        }
+
+        private void btnMusterı_Click(object sender, EventArgs e)
+        {
+            frmMusteri frmmusteri = new frmMusteri();
+            frmmusteri.ShowDialog();
         }
 
         private void btnKategori_Click(object sender, EventArgs e){
@@ -47,12 +58,17 @@ namespace Urun_Takip
                 btnKategori.Show();
                 btnIstatistik.Show();
                 btnKategoriGrafik.Show();
+                btnMusteri.Show();
+                btnSatislar.Show();
+                admin_girisi = true;
             }
             else {
                 btnKategori.Hide();
                 btnIstatistik.Hide();
                 btnUrun.Hide();
                 btnKategoriGrafik.Hide();
+                btnMusteri.Hide();
+                btnSatislar.Hide();
                 MessageBox.Show("Hatalı giriş yaptınız.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
@@ -63,6 +79,12 @@ namespace Urun_Takip
         {
             frmGrafik frmgrafık = new frmGrafik();
             frmgrafık.ShowDialog();
+        }
+
+        private void btnSatislar_Click(object sender, EventArgs e)
+        {
+            frmSatislar frmsatislar = new frmSatislar();
+            frmsatislar.ShowDialog();
         }
     }
 }

@@ -46,6 +46,7 @@
             this.lblId = new System.Windows.Forms.Label();
             this.lblKategori = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnGeri = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudStok)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -113,7 +114,7 @@
             this.groupBox1.Controls.Add(this.txtId);
             this.groupBox1.Controls.Add(this.lblId);
             this.groupBox1.Controls.Add(this.lblKategori);
-            this.groupBox1.Location = new System.Drawing.Point(697, 4);
+            this.groupBox1.Location = new System.Drawing.Point(697, 46);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -238,7 +239,7 @@
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(13, 54);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -247,11 +248,24 @@
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
+            // btnGeri
+            // 
+            this.btnGeri.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnGeri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGeri.Location = new System.Drawing.Point(13, 12);
+            this.btnGeri.Name = "btnGeri";
+            this.btnGeri.Size = new System.Drawing.Size(104, 34);
+            this.btnGeri.TabIndex = 9;
+            this.btnGeri.Text = "Geri";
+            this.btnGeri.UseVisualStyleBackColor = false;
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
+            // 
             // frmUrun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(966, 353);
+            this.ClientSize = new System.Drawing.Size(966, 389);
+            this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -288,5 +302,6 @@
         private System.Windows.Forms.Label lblUrunad;
         private System.Windows.Forms.NumericUpDown nudStok;
         private System.Windows.Forms.ComboBox cbKategori;
+        private System.Windows.Forms.Button btnGeri;
     }
 }

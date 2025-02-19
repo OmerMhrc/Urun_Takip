@@ -117,5 +117,11 @@ namespace Urun_Takip{
             }
             else { MessageBox.Show("Değişiklik yapılmadığı için ürün güncellenmedi"); }
         }
+
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+            Anaekran.ActiveForm?.Show();
+            this.Close();
+        }
     }
 }

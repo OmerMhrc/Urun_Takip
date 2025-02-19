@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,6 +68,14 @@
     <Compile Include="Anaekran.Designer.cs">
       <DependentUpon>Anaekran.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +93,18 @@
     </Compile>
     <Compile Include="frmIstatistik.Designer.cs">
       <DependentUpon>frmIstatistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteri.Designer.cs">
+      <DependentUpon>frmMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatislar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatislar.Designer.cs">
+      <DependentUpon>frmSatislar.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUrun.cs">
       <SubType>Form</SubType>
@@ -91,6 +126,12 @@
     <EmbeddedResource Include="frmIstatistik.resx">
       <DependentUpon>frmIstatistik.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteri.resx">
+      <DependentUpon>frmMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatislar.resx">
+      <DependentUpon>frmSatislar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmUrun.resx">
       <DependentUpon>frmUrun.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +144,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -115,6 +167,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
